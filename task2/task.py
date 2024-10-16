@@ -6,6 +6,8 @@ def main(road):
         data = json.load(read_file)
     nodes = data["nodes"]
     i = 1
+    global arr
+    global res
     arr = np.zeros((len(nodes), len(nodes)))
     while i <= len(nodes):
         temp = nodes[f'{i}']
